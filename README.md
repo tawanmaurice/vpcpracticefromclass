@@ -29,3 +29,17 @@ This project provisions a multi-AZ VPC network with public/private subnets, NAT,
 ---
 
 ## Repo Structure
+
+├── vpc.tf # VPC
+├── subnets.tf # Subnets (public/private)
+├── igw.tf # Internet Gateway
+├── nat.tf # EIP + NAT Gateway
+├── route.tf # Route tables & associations
+├── SG01-All.tf # Security Groups
+├── targetgroup.tf # ALB Target Group
+├── loadbalancer.tf # ALB
+├── ami.tf # Data source for Amazon Linux 2
+├── launchtemplate.tf # Launch Template
+├── autoscaling.tf # Auto Scaling Group + Policy
+├── outputs.tf # Key outputs (ALB DNS, NAT IP)
+└── README.md # Documentation
