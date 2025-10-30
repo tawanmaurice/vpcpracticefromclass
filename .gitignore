@@ -1,0 +1,22 @@
+cat > .gitignore << 'EOF'
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Keep the lock file (good to commit)
+!.terraform.lock.hcl
+
+# Editors/OS
+.vscode/
+.DS_Store
+Thumbs.db
+EOF
+
